@@ -6,7 +6,7 @@
     <title>Web17</title>
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
-  <body>
+  <body class="body">
     <script src="src/javascript/app.js"></script>
     <button id="deleteButton" onclick="deleteSelf()">
       Click to Delete This
@@ -26,6 +26,8 @@
       imageElement.classList.add("poppies");
       document.body.appendChild(imageElement);
     </script>
-    <div id="characters-list"></div>
+    <div class="characters-container">
+      <div class="characters-grid" id="characters-list"></div>
+    </div>
   </body>
 </html>
