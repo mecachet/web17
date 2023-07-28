@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web17</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <script src="src/javascript/app.js"></script>
+    <button id="deleteButton" onclick="deleteSelf()">
+      Click to Delete This
+    </button>
+    <script>
+      function deleteSelf() {
+        var button = document.getElementById("deleteButton");
+        button.parentNode.removeChild(button);
+      }
+    </script>
+  </body>
 </html>
