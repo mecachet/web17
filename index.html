@@ -16,8 +16,16 @@
         var button = document.getElementById("deleteButton");
         button.parentNode.removeChild(button);
       }
-      <div id="characters-list">
-    </div>
     </script>
+    <script class="Image">
+      const imageElement = document.createElement("img");
+      const imageUrl =
+        "https://fastly.picsum.photos/id/405/1400/800.jpg?hmac=4CRI7OpfDWtP4EydVd4Z-1NKSGhBmpZq8OaEXVu3be8";
+      imageElement.setAttribute("src", imageUrl);
+      imageElement.setAttribute("alt", "Poppie's Fish and Chips");
+      imageElement.classList.add("poppies");
+      document.body.appendChild(imageElement);
+    </script>
+    <div id="characters-list"></div>
   </body>
 </html>
